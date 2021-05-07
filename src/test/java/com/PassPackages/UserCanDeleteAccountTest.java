@@ -36,6 +36,7 @@ class UserCanDeleteAccountTest {
 		userCanChangeAddress.setAddress("312 herbert macaulay, yaba, lagos");
 		Assertions.assertEquals("312 herbert macaulay, yaba, lagos", userCanChangeAddress.getAddress());
 	}
+	
 }
 	
 
