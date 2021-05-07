@@ -4,11 +4,15 @@ public class UserCanCreate {
 	String name;
 	String email;
 	String address;
+	String PhoneNumber;
+	int zipCode;
 	
-	public UserCanCreate(String name, String email, String address) {
+	public UserCanCreate(String name, String email, String address, String phoneNumber, int zipCode) {
 		this.name = name;
 		this.email = email;
 		this.address = address;
+		PhoneNumber = phoneNumber;
+		this.zipCode = zipCode;
 	}
 	
 	public String getName() {
@@ -33,5 +37,21 @@ public class UserCanCreate {
 	
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	public String getPhoneNumber() {
+		return PhoneNumber;
+	}
+	
+	public void setPhoneNumber(String phoneNumber) {
+		PhoneNumber = phoneNumber;
+	}
+	
+	public int getZipCode() {
+		return zipCode;
+	}
+	
+	public void setZipCode(int zipCode) {
+		this.zipCode = zipCode;
 	}
 }
