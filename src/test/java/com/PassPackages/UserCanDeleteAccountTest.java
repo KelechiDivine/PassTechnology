@@ -37,6 +37,16 @@ class UserCanDeleteAccountTest {
 		Assertions.assertEquals("312 herbert macaulay, yaba, lagos", userCanChangeAddress.getAddress());
 	}
 	
+	@Test
+	public  void UserCanSetEmail(){
+		UserCanCreate userCanEmail = new UserCanCreate("okoroafor kelechi",
+				"okoroaforkelechi123@gmail.com",
+				"3, owojori street, Ogun state","08082167764", 123);
+		userCanEmail.setEmail("kdivine892@gmail.com");
+		Assertions.assertEquals("kdivine892@gmail.com", userCanEmail.getEmail());
+		
+	}
+	
 }
 	
 
