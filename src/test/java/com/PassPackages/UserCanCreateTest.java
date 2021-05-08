@@ -1,16 +1,16 @@
 package com.PassPackages;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class UserCanDeleteAccountTest {
+class UserCanCreateTest {
 	
-	@org.junit.jupiter.api.BeforeEach
+	@BeforeEach
 	void setUp() {
 	}
-	
 	@Test
-	 public void GetUserLoginDetails(){
+	public void GetUserLoginDetails(){
 		UserCanCreate userCanCreate = new UserCanCreate("okoroafor", "kelechi",
 				"Divine",
 				"okoroaforkelechi123@gmail.com",
@@ -25,7 +25,7 @@ class UserCanDeleteAccountTest {
 				"Divine",
 				"okoroaforkelechi123@gmail.com",
 				"3, owojori street, Ogun state",82167764, 1234);
-		Assertions.assertEquals("Kelechi Divine",SetUserName.getLastName());
+		Assertions.assertEquals("Divine",SetUserName.getLastName());
 	}
 	
 	@Test
@@ -34,7 +34,7 @@ class UserCanDeleteAccountTest {
 				"Divine",
 				"okoroaforkelechi123@gmail.com",
 				"3, owojori street, Ogun state",82167764, 1234);
-		Assertions.assertEquals("312 herbert macaulay, yaba, lagos", userCanChangeAddress.getAddress());
+		Assertions.assertEquals("3, owojori street, Ogun state", userCanChangeAddress.getAddress());
 	}
 	
 	@Test
@@ -43,11 +43,8 @@ class UserCanDeleteAccountTest {
 				"Divine",
 				"okoroaforkelechi123@gmail.com",
 				"3, owojori street, Ogun state",826167764, 1234);
-		Assertions.assertEquals("kdivine892@gmail.com", userCanEmail.getEmail());
+		Assertions.assertEquals("okoroaforkelechi123@gmail.com", userCanEmail.getEmail());
 		
 	}
 	
 }
-	
-
-
