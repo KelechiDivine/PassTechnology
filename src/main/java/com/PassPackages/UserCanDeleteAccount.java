@@ -1,7 +1,7 @@
 package com.PassPackages;
 
 public class UserCanDeleteAccount {
-	String DeleteAccount;
+	private String DeleteAccount;
 	
 	public UserCanDeleteAccount(String deleteAccount) {
 		DeleteAccount = deleteAccount;

@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class UserCanCreate {
 	
-	String FirstName;
-	String MiddleName;
-	String LastName;
-	String email;
-	String address;
-	int PhoneNumber;
-	int zipCode;
+	public String FirstName;
+	public String MiddleName;
+	public String LastName;
+	public String email;
+	public String address;
+	public int PhoneNumber;
+	private int zipCode;
 	
 	public UserCanCreate(String firstName, String middleName,
 						 String lastName, String email, String address,

@@ -1,28 +1,36 @@
 package com.PassPackages;
 
-public class UserCanLogin {
+class UserCanLoginUsingPassword {
 	
-	String Password;
-	String UserName;
+	private String password;
 	
-	public UserCanLogin(String password, String userName) {
-		Password = password;
-		UserName = userName;
+	public UserCanLoginUsingPassword(String password) {
+		this.password = password;
 	}
 	
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 	
 	public void setPassword(String password) {
-		Password = password;
-	}
-	
-	public String getUserName() {
-		return UserName;
-	}
-	
-	public void setUserName(String userName) {
-		UserName = userName;
+		this.password = password;
 	}
 }
+
+
+	class UserCanLoginUsingEmail {
+		private String email;
+		
+		public UserCanLoginUsingEmail(String email) {
+			this.email = email;
+		}
+		
+		public String getEmail() {
+			return email;
+		}
+		
+		public void setEmail(String email) {
+			this.email = email;
+		}
+	}
+	
