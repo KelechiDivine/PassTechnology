@@ -1,4 +1,7 @@
 PassTechnology.iml
 pom.xml
 target
-.idea
+.idea/misc.xml
+ .idea/vcs.xml
+ PassTechnology
+
