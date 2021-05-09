@@ -1,59 +1,72 @@
 package com.PassPackages;
 
-import java.util.Scanner;
-
-public class UserCanCreate {
+class UserCanCreateFirstName {
+	public String firstName;
 	
-	public String FirstName;
-	public String MiddleName;
-	public String LastName;
-	public String email;
-	public String address;
-	public int PhoneNumber;
-	private int zipCode;
-	
-	public UserCanCreate(String firstName, String middleName,
-						 String lastName, String email, String address,
-						 int phoneNumber, int zipCode) {
-		FirstName = firstName;
-		MiddleName = middleName;
-		LastName = lastName;
-		this.email = email;
-		this.address = address;
-		PhoneNumber = phoneNumber;
-		this.zipCode = zipCode;
+	public UserCanCreateFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	
 	public String getFirstName() {
-		return FirstName;
+		return firstName;
 	}
 	
 	public void setFirstName(String firstName) {
-		FirstName = firstName;
+		firstName = firstName;
+	}
+}
+
+
+class UserCanCreateMiddleName {
+	public String middleName;
+	
+	public UserCanCreateMiddleName(String middleName) {
+		this.middleName = middleName;
 	}
 	
 	public String getMiddleName() {
-		return MiddleName;
+		return middleName;
 	}
 	
 	public void setMiddleName(String middleName) {
-		MiddleName = middleName;
+		middleName = middleName;
+	}
+	
+}
+
+
+class UserCanCreateLastName {
+	public String lastName;
+	
+	public UserCanCreateLastName(String lastName) {
+		this. lastName = lastName;
 	}
 	
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 	
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		lastName = lastName;
 	}
+}
+
+
+class UserCanCreateEmail {
+	public String email;
 	
-	public String getEmail() {
-		return email;
-	}
-	
-	public void setEmail(String email) {
+	public UserCanCreateEmail(String email) {
 		this.email = email;
+	}
+}
+
+// Address method
+
+class UserCanCreateAddress {
+	public String address;
+	
+	public UserCanCreateAddress(String address) {
+		this.address = address;
 	}
 	
 	public String getAddress() {
@@ -63,13 +76,32 @@ public class UserCanCreate {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+}
+
+// Phone Number method
+
+class UserCanCreatePhoneNumber {
+	public int phoneNumber;
+	
+	public UserCanCreatePhoneNumber(int phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
 	
 	public int getPhoneNumber() {
-		return PhoneNumber;
+		return phoneNumber;
 	}
 	
 	public void setPhoneNumber(int phoneNumber) {
-		PhoneNumber = phoneNumber;
+		phoneNumber = phoneNumber;
+	}
+}
+
+
+class UserCanCreateZipCode{
+	private int zipCode;
+	
+	public UserCanCreateZipCode(int zipCode) {
+		this.zipCode = zipCode;
 	}
 	
 	public int getZipCode() {
@@ -79,32 +111,4 @@ public class UserCanCreate {
 	public void setZipCode(int zipCode) {
 		this.zipCode = zipCode;
 	}
-}
-
-
-class PromptUserToCreate {
-	
-	public static void main(String[] args) {
-		Scanner UserInput = new Scanner(System.in);
-		
-		System.out.print("Enter First name : ");
-		String name = UserInput.next();
-		
-		System.out.print("Enter middle name: ");
-		String middleName = UserInput.next();
-		
-		System.out.println("Enter last name: ");
-		String lastName = UserInput.next();
-		
-		System.out.print("Enter Email: ");
-		String email = UserInput.next();
-		
-		System.out.print("Enter Zip code: ");
-		int ZipCode = UserInput.nextInt(4);
-		
-		System.out.print("Enter phone number: ");
-		int PhoneNumber = UserInput.nextInt(11);
-	}
-	
-
 }

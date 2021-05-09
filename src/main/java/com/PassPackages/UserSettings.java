@@ -1,31 +1,59 @@
 package com.PassPackages;
 
-public class UserSettings {
+class UserCanChangePassword {
+	private String changePassword;
 	
-	private String ChangePassword;
-	private String ForgetPassword;
-	private String rememberMeMyPassword;
-	
-	public UserSettings(String changePassword, String forgetPassword, String rememberMeMyPassword) {
-		ChangePassword = changePassword;
-		ForgetPassword = forgetPassword;
-		this.rememberMeMyPassword = rememberMeMyPassword;
+	public UserCanChangePassword(String changePassword) {
+		this.changePassword = changePassword;
 	}
 	
 	public String getChangePassword() {
-		return ChangePassword;
+		return changePassword;
 	}
 	
 	public void setChangePassword(String changePassword) {
-		ChangePassword = changePassword;
+		this.changePassword = changePassword;
+	}
+}
+
+
+class FirgetPassword {
+	private String forgetPassword;
+	
+	public FirgetPassword(String forgetPassword) {
+		this.forgetPassword = forgetPassword;
 	}
 	
 	public String getForgetPassword() {
-		return ForgetPassword;
+		return forgetPassword;
 	}
 	
 	public void setForgetPassword(String forgetPassword) {
-		ForgetPassword = forgetPassword;
+		this.forgetPassword = forgetPassword;
+	}
+}
+
+class UserCanChangeEmail {
+	private String changeEmail;
+	
+	public UserCanChangeEmail(String changeEmail) {
+		this.changeEmail = changeEmail;
+	}
+	
+	public String getChangeEmail() {
+		return changeEmail;
+	}
+	
+	public void setChangeEmail(String changeEmail) {
+		this.changeEmail = changeEmail;
+	}
+}
+
+class RememberPassWord{
+	private String rememberMeMyPassword;
+	
+	public RememberPassWord(String rememberMeMyPassword) {
+		this.rememberMeMyPassword = rememberMeMyPassword;
 	}
 	
 	public String getRememberMeMyPassword() {

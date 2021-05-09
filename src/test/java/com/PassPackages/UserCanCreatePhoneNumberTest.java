@@ -4,13 +4,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class UserCanCreateTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+class UserCanCreatePhoneNumberTest {
 	
 	@BeforeEach
 	void setUp() {
 	}
 	
-	@Test
-	public void GetUserLoginDetails() {
-	}
 }
