@@ -27,7 +27,9 @@ class UserCanCreateAddressTest {
 			
 			Assertions.assertEquals("312, herbert macaulay way, yaba, lagos", userCanCreateAddress.getAddress());
 			userCanCreateAddress.setAddress("3, idiidid");
-		} catch (Exception exception) {
+			System.out.println("Your address has been updated in the database..");
+		}
+		catch (Exception exception) {
 			throw new InputMismatchException();
 			
 			

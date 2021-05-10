@@ -12,15 +12,21 @@ class UserCanLoginTest {
 	
 	@Test
 	public void UserCanLoginWithPassword() throws Exception {
-		UserCanLoginUsingPassword userCanLoginUsingPassword = new UserCanLoginUsingPassword("keLechiDivine5363@#");
+		UserCanLoginUsingPassword userCanLoginUsingPassword = new UserCanLoginUsingPassword("");
 		try {
-			if (userCanLoginUsingPassword.getPassword().equals("keLechiDivine5363#")) {
+			if (userCanLoginUsingPassword.getPassword().equals("keLechiDivine5363@#")) {
 				System.out.print("You Logged in successfully...");
 			}
 			else {
-				System.out.println("Your password is incorrect.\nPlease try again!");
+				//user password can't be empty else it throws error
+				if (userCanLoginUsingPassword.getPassword().isEmpty()){
+					System.out.println("Your password field can't be empty.");
+				}
+				else {
+					System.out.println("An incorrect password, Please try again!");
+				}
 			}
-			Assertions.assertEquals("keLechiDivine5363@#", userCanLoginUsingPassword.getPassword());
+			Assertions.assertEquals("", userCanLoginUsingPassword.getPassword());
 		}
 		catch (Exception exception) {
 			throw new IOException();
@@ -35,12 +41,18 @@ class UserCanLoginTest {
 		try {
 			if (userCanLoginUsingEmail.getEmail().contains("@")) {
 				System.out.println("Email accepted!");
-			} else {
-				System.out.println("Email not recognised.");
 			}
-			Assertions.assertEquals("okoroaforkelechi123@gmail.com", userCanLoginUsingEmail.getEmail());
-			userCanLoginUsingEmail.setEmail("kdivine892@gmail.com");
-			System.out.println("Email updated!!");
+			else {
+				if (userCanLoginUsingEmail.getEmail().isEmpty()) {
+					System.out.println("Email field can't be empty");
+				}
+				else {
+					System.out.println("Email not recognised.");
+				}
+				Assertions.assertEquals("okoroaforkelechi123@gmail.com", userCanLoginUsingEmail.getEmail());
+				userCanLoginUsingEmail.setEmail("kdivine892@gmail.com");
+				System.out.println("Dear Customer your email has been updated..");
+			}
 		}
 		catch (Exception exception) {
 			throw new NoSuchFieldException();
