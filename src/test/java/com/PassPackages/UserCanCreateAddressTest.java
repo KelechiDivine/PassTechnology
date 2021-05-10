@@ -20,7 +20,8 @@ class UserCanCreateAddressTest {
 		try {
 			if (userCanCreateAddress.getAddress().equals("312, herbert macaulay way, yaba, lagos")) {
 				System.out.println("Address Submission was successful!!");
-			} else {
+			}
+			else {
 				System.out.println("Sorry your address doesn't match.\nPlease try updating the address.");
 			}
 			
