@@ -1,56 +1,5 @@
 package com.PassPackages;
 
-class UserCanCreateFirstName {
-	public String firstName;
-	
-	public UserCanCreateFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	
-	public String getFirstName() {
-		return firstName;
-	}
-	
-	public void setFirstName(String firstName) {
-		firstName = firstName;
-	}
-}
-
-
-class UserCanCreateMiddleName {
-	public String middleName;
-	
-	public UserCanCreateMiddleName(String middleName) {
-		this.middleName = middleName;
-	}
-	
-	public String getMiddleName() {
-		return middleName;
-	}
-	
-	public void setMiddleName(String middleName) {
-		middleName = middleName;
-	}
-	
-}
-
-
-class UserCanCreateLastName {
-	public String lastName;
-	
-	public UserCanCreateLastName(String lastName) {
-		this. lastName = lastName;
-	}
-	
-	public String getLastName() {
-		return lastName;
-	}
-	
-	public void setLastName(String lastName) {
-		lastName = lastName;
-	}
-}
-
 
 class UserCanCreateEmail {
 	public String email;
